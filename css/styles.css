@@ -1,1 +1,48 @@
+body {
+  font-family: Roboto, sans-serif;
+  background: #ffffff;
+  color: #757575;
+}
 
+/*Logo*/
+.logo {
+  font-family: 'Raleway';
+  color: #000000;
+}
+.logo-web {
+  color: #2196f3;
+}
+
+/*site-nav*/
+.header-site-nav {
+  list-style: none;
+}
+.header-site-nav .header-link {
+  color: #212121;
+}
+.header-site-nav .header-link:hover,
+.header-site-nav .header-link:focus {
+  color: #2196f3;
+}
+/*Contacts*/
+.header-auth-nav {
+  list-style: none;
+}
+.header-auth-nav .auth-contact {
+  color: #757575;
+}
+.header-auth-nav .auth-contact:hover,
+.header-auth-nav .auth-contact:focus {
+  color: #2196f3;
+}
+/*Hero*/
+.hero-section {
+  background-color: #2f303a;
+}
+.hero-title,
+.hero-button {
+  color: #ffffff;
+}
+.hero-button {
+  background-color: #2196f3;
+}
