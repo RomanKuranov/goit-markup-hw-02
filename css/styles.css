@@ -1,29 +1,53 @@
+/* палитра */
+/* белый #FFFFFF; */
+/* вторичны цвет фона #F5F4FA; */
+/* вторичный цвет текста #212121;*/
+/* основной цвет текста #757575; */
+/* активный цвет текста ссылок #2196F3; */
+/* акцент #2196F3; */
 body {
   font-family: Roboto, sans-serif;
   background: #ffffff;
   color: #757575;
 }
+.list {
+  list-style: none;
+}
+.hero-button,
+.filter-button {
+  font-family: inherit;
+}
 
 /*Logo*/
 .logo {
   font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
   color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
 }
 .logo-web {
   color: #2196f3;
 }
+.logo-studio {
+  color: #ffffff;
+}
 
 /*site-nav*/
-.header-site-nav {
+.header-nav .site-nav {
   list-style: none;
 }
-.header-site-nav .header-link {
+.header-nav .header-link {
   color: #212121;
 }
-.header-site-nav .header-link:hover,
-.header-site-nav .header-link:focus {
+.header-nav .header-link:hover,
+.header-nav .header-link:focus {
   color: #2196f3;
 }
+
 /*Contacts*/
 .header-auth-nav {
   list-style: none;
@@ -35,14 +59,174 @@ body {
 .header-auth-nav .auth-contact:focus {
   color: #2196f3;
 }
+
 /*Hero*/
 .hero-section {
   background-color: #2f303a;
 }
-.hero-title,
-.hero-button {
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-section .hero-button:hover,
+.hero-section .hero-button:focus {
+  background: #188ce8;
+}
+
+/*specifics*/
+.specifics .specifics-list {
+  list-style: none;
+}
+.specifics-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.specifics-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/*worck*/
+.worck-section .worck-list {
+  list-style: none;
+}
+.worck-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/*team*/
+.team-section {
+  background-color: #f5f4fa;
+}
+.team-content {
+  background: #ffffff;
+}
+.team-section .team-list {
+  list-style: none;
+}
+.team-section .team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-content .team-content-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-content .team-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*footer*/
+.footer-page {
+  background: #2f303a;
+}
+.address-section .address-list {
+  list-style: none;
+}
+.address-section .address-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.address-section .address-contact {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-section .address-contact:hover,
+.address-section .address-contact:focus {
+  color: #2196f3;
+}
+/*portfolio*/
+/*filter*/
+.filter-list {
+  list-style: none;
+}
+.filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background: #f5f4fa;
+  border-radius: 4px;
+  border: none;
+}
+.filter-list .filter-button:hover,
+.filter-list .filter-button:focus {
+  background: #2196f3;
+  color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+/*exempels*/
+.exemple-list {
+  list-style: none;
+}
+.exemple-link {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.exemple-link .exemple-content-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.exemple-link .exemple-content-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
